@@ -1,0 +1,31 @@
+<!-- Reservation Section -->
+<section id="reservation" class="reservation">
+    <h2>Book a Table</h2>
+    <form id="reservation-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <input type="number" name="guests" placeholder="Number of Guests" required>
+
+        <!-- Veg/Non-Veg selection -->
+        <div class="form-box">
+            <select name="meal_type" id="meal-type" required>
+                <option value="">-- Select Meal Preference --</option>
+                <option value="veg">Vegetarian</option>
+                <option value="non-veg">Non-Vegetarian</option>
+            </select>
+        </div>
+
+        <!-- Submit button -->
+        <div class="form-box">
+            <button type="submit">Reserve Now</button>
+        </div>
+    </form>
+
+    <!-- Confirmation message -->
+    <div id="confirmation-message">
+        <p>✅ Thank you! Your reservation has been received.</p>
+    </div>
+</section>
